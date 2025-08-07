@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portofolio ANDI DHAFI KHAIRULLAH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About Me</a>
+    <a href="#" onclick="showSection('achievement')">Achievement</a>
+  </nav>
+
+  <!-- Halaman Utama -->
+  <div id="home" class="section active">
+    <div class="container">
+      <div class="photo-frame">
+        <img src="foto.jpg" alt="Foto Andi" class="photo">
+        <div class="minion-glasses"></div>
+      </div>
+      <h1 style="color: #2980b9;">ANDI DHAFI KHAIRULLAH</h1>
+      <div class="social-icons">
+        <a href="https://instagram.com/im_not_k1ng" target="_blank">
+          <img src="ig.png" alt="Instagram" class="icon">
+        </a>
+        <a href="https://www.tiktok.com/@xudin0" target="_blank">
+          <img src="tiktok.png" alt="TikTok" class="icon">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Me -->
+  <div id="about" class="section">
+    <div class="form-container">
+      <h2>About Me</h2>
+      <p>
+        Hai, aku Dhafi biasa dipanggil Boxing dan aku tinggal di Sulawesi Selatan.
+        Aku suka sekali bermain game seperti ML dan OPBR. Biasanya aku main ML
+        bersama Yayank sama Ucu. Kadang Yayank bikin jengkel pengen mukul rasanya,
+        apalagi kalo udah pake Kimmy sok jago 🗿🗿. Hehe, canda Yayank.
+      </p>
+    </div>
+  </div>
+
+  <!-- Achievement -->
+  <div id="achievement" class="section">
+    <div class="form-container">
+      <h2>Achievement</h2>
+      <div class="certificates">
+        <img src="sertifikat1.jpg" alt="Sertifikat 1">
+        <img src="sertifikat2.jpg" alt="Sertifikat 2">
+        <img src="sertifikat3.jpg" alt="Sertifikat 3">
+        <img src="sertifikat4.jpg" alt="Sertifikat 4">
+        <img src="sertifikat5.jpg" alt="Sertifikat 5">
+      </div>
+      <p style="margin-top: 20px;">Ganti nama file `sertifikatX.jpg` dengan nama gambar sertifikatmu dan simpan di folder yang sama dengan file HTML ini.</p>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
